@@ -2320,7 +2320,7 @@
         }
 
         // Set defaults for date here now instead of in var declaration
-        date = getMoment();
+        date = getMoment().startOf('day');
         viewDate = date.clone();
 
         $.extend(true, options, dataToOptions());
